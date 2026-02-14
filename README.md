@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/futesat/casadacuncheira.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/futesat/casadacuncheira.github.io/actions/workflows/deploy.yml)
 
-**Casa da Cuncheira** es un sitio web premium de alquiler vacacional diseñado para evocar tranquilidad, conexión con la naturaleza y exclusividad. Ubicado en la espectacular Costa da Morte, Galicia, este proyecto ofrece una experiencia visual sofisticada y moderna.
+**Casa da Cuncheira** es un sitio web de alquiler vacacional diseñado para evocar tranquilidad, conexión con la naturaleza y exclusividad. Ubicado en la espectacular Costa da Morte, Galicia, este proyecto ofrece una experiencia visual sofisticada y moderna.
 
 🚀 **Ver en vivo:** [https://futesat.github.io/casadacuncheira.github.io/](https://futesat.github.io/casadacuncheira.github.io/)
 
@@ -11,7 +11,7 @@
 ## ✨ Características Principales
 
 - 🌍 **Soporte Multilingüe:** Disponible en 7 idiomas (Español, Gallego, Inglés, Francés, Alemán, Italiano y Portugués) con traducciones completas en todas las secciones.
-- 🎨 **Diseño Moderno & Premium:** UI elegante basada en componentes personalizados, con un enfoque en la fotografía de alta calidad y la tipografía moderna.
+- 🎨 **Diseño Moderno ** UI elegante basada en componentes personalizados, con un enfoque en la fotografía de alta calidad y la tipografía moderna.
 - 🎭 **Animaciones Fluidas:** Experiencia de usuario dinámica utilizando `Framer Motion` para transiciones y micro-interacciones suaves.
 - 🗺️ **Mapa Satelital Interactivo:** Ubicación precisa integrada con Google Maps en modo satélite para apreciar el entorno natural.
 - 📱 **Totalmente Responsivo:** Adaptado para una navegación perfecta en dispositivos móviles, tablets y escritorio.
