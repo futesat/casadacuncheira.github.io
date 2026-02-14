@@ -23,6 +23,8 @@ export function Header() {
     { code: 'en', name: 'EN' },
     { code: 'fr', name: 'FR' },
     { code: 'de', name: 'DE' },
+    { code: 'it', name: 'IT' },
+    { code: 'pt', name: 'PT' },
   ];
 
   const scrollToSection = (id: string) => {
@@ -98,8 +100,8 @@ export function Header() {
               <button
                 onClick={() => setShowLangMenu(!showLangMenu)}
                 className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${isScrolled
-                    ? 'hover:bg-secondary/50'
-                    : 'hover:bg-white/20 text-white'
+                  ? 'hover:bg-secondary/50'
+                  : 'hover:bg-white/20 text-white'
                   }`}
               >
                 <Globe className="w-4 h-4" />
@@ -133,8 +135,8 @@ export function Header() {
             <button
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled
-                  ? 'hover:bg-secondary/50'
-                  : 'hover:bg-white/20 text-white'
+                ? 'hover:bg-secondary/50'
+                : 'hover:bg-white/20 text-white'
                 }`}
             >
               {showMobileMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

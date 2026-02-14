@@ -46,3 +46,20 @@ html {
 .slick-next {
   display: none !important;
 }
+
+/* Global Fix for Slider Baseline Gaps */
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div {
+  display: block !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+.slick-slide img {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

@@ -10,7 +10,6 @@ export function House() {
   const { t } = useLanguage();
 
   const images = [
-    '/images/home.jpg',
     '/images/casa.jpg',
     '/images/habitacion1.jpg',
     '/images/habitacion2.jpg',
@@ -73,11 +72,11 @@ export function House() {
         >
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
-              <div key={index} className="relative h-[500px] md:h-[600px]">
-                <ImageWithFallback
+              <div key={index} className="relative h-[500px] md:h-[600px] overflow-hidden bg-black">
+                <img
                   src={image}
                   alt={`Interior ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-[1.02]"
                 />
               </div>
             ))}
