@@ -6,4 +6,3 @@ node_modules
 .agent
 dist
 .vite
-package-lock.json
