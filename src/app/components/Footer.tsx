@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-xl mb-4 tracking-wide">Costa da Morte</div>
+            <div className="text-xl mb-4 tracking-wide">Casa da Cuncheira</div>
             <p className="text-white/70 text-sm">
               Tu refugio en el Atlántico gallego
             </p>
@@ -33,10 +33,10 @@ export function Footer() {
                 {t('nav.location')}
               </button>
               <button
-                onClick={() => document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' })}
                 className="block text-white/70 hover:text-white transition-colors"
               >
-                {t('nav.plans')}
+                {t('nav.experiences')}
               </button>
               <button
                 onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
