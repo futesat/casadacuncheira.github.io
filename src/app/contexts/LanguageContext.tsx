@@ -16,6 +16,15 @@ const translations: Translations = {
   'nav.experiences': { es: 'Experiencias', gl: 'Experiencias', en: 'Experiences', fr: 'Expériences', de: 'Erlebnisse', it: 'Esperienze', pt: 'Experiências' },
   'nav.book': { es: 'Reservar', gl: 'Reservar', en: 'Book', fr: 'Réserver', de: 'Buchen', it: 'Prenota', pt: 'Reservar' },
   'nav.contact': { es: 'Contacto', gl: 'Contacto', en: 'Contact', fr: 'Contact', de: 'Kontakt', it: 'Contatto', pt: 'Contacto' },
+  'footer.description': {
+    es: 'Tu refugio en el Atlántico gallego',
+    gl: 'O teu refuxio no Atlántico galego',
+    en: 'Your retreat in the Galician Atlantic',
+    fr: 'Votre refuge dans l\'Atlantique galicien',
+    de: 'Ihr Rückzugsort im galicischen Atlantik',
+    it: 'Il tuo rifugio nell\'Atlantico galiziano',
+    pt: 'O seu refúgio no Atlântico galego'
+  },
 
   // Hero
   'hero.title': {
@@ -37,6 +46,16 @@ const translations: Translations = {
     pt: 'Onde o Atlântico encontra a tranquilidade'
   },
   'hero.cta': { es: 'Descubrir', gl: 'Descubrir', en: 'Discover', fr: 'Découvrir', de: 'Entdecken', it: 'Scopri', pt: 'Descobrir' },
+
+  // Features
+  'features.atlantic.title': { es: 'Costa Atlántica', gl: 'Costa Atlántica', en: 'Atlantic Coast', fr: 'Côte Atlantique', de: 'Atlantikküste', it: 'Costa Atlantica', pt: 'Costa Atlântica' },
+  'features.atlantic.desc': { es: 'Playas salvajes y acantilados impresionantes', gl: 'Praias salvaxes e acantilados impresionantes', en: 'Wild beaches and breathtaking cliffs', fr: 'Plages sauvages et falaises à couper le souffle', de: 'Wilde Strände und atemberaubende Klippen', it: 'Spiagge selvagge e scogliere mozzafiato', pt: 'Praias selvagens e falésias deslumbrantes' },
+  'features.pindo.title': { es: 'Monte Pindo', gl: 'Monte Pindo', en: 'Mount Pindo', fr: 'Mont Pindo', de: 'Berg Pindo', it: 'Monte Pindo', pt: 'Monte Pindo' },
+  'features.pindo.desc': { es: 'El Olimpo celta con vistas únicas', gl: 'O Olimpo celta con vistas únicas', en: 'The Celtic Olympus with unique views', fr: 'L\'Olympe celtique avec des vues uniques', de: 'Der keltische Olymp mit einzigartigen Aussichten', it: 'L\'Olimpo celtico con viste uniche', pt: 'O Olimpo celta com vistas únicas' },
+  'features.sunset.title': { es: 'Atardeceres Mágicos', gl: 'Atardeceres Máxicos', en: 'Magical Sunsets', fr: 'Couchers de soleil magiques', de: 'Magische Sonnenuntergänge', it: 'Tramonti magici', pt: 'Pôr do sol mágico' },
+  'features.sunset.desc': { es: 'Las mejores puestas de sol de Galicia', gl: 'As mellores postas de sol de Galicia', en: 'The best sunsets in Galicia', fr: 'Les meilleurs couchers de soleil de Galice', de: 'Die besten Sonnenuntergänge in Galizien', it: 'I migliori tramonti della Galizia', pt: 'O melhor pôr do sol da Galiza' },
+  'features.air.title': { es: 'Aire Puro', gl: 'Aire Puro', en: 'Fresh Air', fr: 'Grand Air', de: 'Frische Luft', it: 'Aria Pura', pt: 'Ar Puro' },
+  'features.air.desc': { es: 'Naturaleza en estado puro', gl: 'Natureza en estado puro', en: 'Pure nature', fr: 'La nature à l\'état pur', de: 'Natur in ihrer reinsten Form', it: 'Natura allo stato puro', pt: 'Natureza em estado puro' },
 
   // House
   'house.title': { es: 'Un hogar lejos de casa', gl: 'Un fogar lonxe da casa', en: 'A home away from home', fr: 'Une maison loin de chez soi', de: 'Ein Zuhause fern von Zuhause', it: 'Una casa lontano da casa', pt: 'Um lar longe de casa' },

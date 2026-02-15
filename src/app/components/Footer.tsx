@@ -1,4 +1,5 @@
 import { useLanguage } from '../contexts/LanguageContext';
+import { FOOTER_TEXTS } from '../constants/footer';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -10,15 +11,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-xl mb-4 tracking-wide">Casa da Cuncheira</div>
+            <div className="text-xl mb-4 tracking-wide">{FOOTER_TEXTS.brand}</div>
             <p className="text-white/70 text-sm">
-              Tu refugio en el Atlántico gallego
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4">Enlaces</h4>
+            <h4 className="mb-4">{FOOTER_TEXTS.linksTitle}</h4>
             <div className="space-y-2 text-sm">
               <button
                 onClick={() => document.getElementById('house')?.scrollIntoView({ behavior: 'smooth' })}
@@ -51,16 +52,16 @@ export function Footer() {
           <div>
             <h4 className="mb-4">{t('nav.contact')}</h4>
             <div className="space-y-2 text-sm text-white/70">
-              <p>faroinsua@gmail.com</p>
-              <p>+34 607 952 250</p>
-              <p>Casa da Cuncheira</p>
+              <p>{FOOTER_TEXTS.owner}</p>
+              <p>{FOOTER_TEXTS.phone}</p>
+              <p>{FOOTER_TEXTS.email}</p>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="pt-8 border-t border-white/10 text-center text-sm text-white/60">
-          <p>© {currentYear} Casa da Cuncheira. {t('footer.rights')}.</p>
+          <p>© {currentYear} {FOOTER_TEXTS.brand}. {t('footer.rights')}.</p>
         </div>
       </div>
     </footer>

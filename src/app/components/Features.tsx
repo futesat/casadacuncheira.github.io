@@ -1,27 +1,30 @@
 import { motion } from 'motion/react';
 import { Waves, Mountain, Sun, Wind } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export function Features() {
+  const { t } = useLanguage();
+
   const features = [
     {
       icon: Waves,
-      title: 'Costa Atlántica',
-      description: 'Playas salvajes y acantilados impresionantes',
+      title: t('features.atlantic.title'),
+      description: t('features.atlantic.desc'),
     },
     {
       icon: Mountain,
-      title: 'Monte Pindo',
-      description: 'El Olimpo celta con vistas únicas',
+      title: t('features.pindo.title'),
+      description: t('features.pindo.desc'),
     },
     {
       icon: Sun,
-      title: 'Atardeceres Mágicos',
-      description: 'Las mejores puestas de sol de Galicia',
+      title: t('features.sunset.title'),
+      description: t('features.sunset.desc'),
     },
     {
       icon: Wind,
-      title: 'Aire Puro',
-      description: 'Naturaleza en estado puro',
+      title: t('features.air.title'),
+      description: t('features.air.desc'),
     },
   ];
 
