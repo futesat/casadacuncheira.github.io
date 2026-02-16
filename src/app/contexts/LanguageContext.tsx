@@ -64,8 +64,8 @@ const translations: Translations = {
   'features.pindo.desc': { es: 'El Olimpo celta con vistas únicas', gl: 'O Olimpo celta con vistas únicas', en: 'The Celtic Olympus with unique views', fr: 'L\'Olympe celtique avec des vues uniques', de: 'Der keltische Olymp mit einzigartigen Aussichten', it: 'L\'Olimpo celtico con viste uniche', pt: 'O Olimpo celta com vistas únicas' },
   'features.sunset.title': { es: 'Atardeceres Mágicos', gl: 'Atardeceres Máxicos', en: 'Magical Sunsets', fr: 'Couchers de soleil magiques', de: 'Magische Sonnenuntergänge', it: 'Tramonti magici', pt: 'Pôr do sol mágico' },
   'features.sunset.desc': { es: 'Las mejores puestas de sol de Galicia', gl: 'As mellores postas de sol de Galicia', en: 'The best sunsets in Galicia', fr: 'Les meilleurs couchers de soleil de Galice', de: 'Die besten Sonnenuntergänge in Galizien', it: 'I migliori tramonti della Galizia', pt: 'O melhor pôr do sol da Galiza' },
-  'features.air.title': { es: 'Aire Puro', gl: 'Aire Puro', en: 'Fresh Air', fr: 'Grand Air', de: 'Frische Luft', it: 'Aria Pura', pt: 'Ar Puro' },
-  'features.air.desc': { es: 'Naturaleza en estado puro', gl: 'Natureza en estado puro', en: 'Pure nature', fr: 'La nature à l\'état pur', de: 'Natur in ihrer reinsten Form', it: 'Natura allo stato puro', pt: 'Natureza em estado puro' },
+  'features.air.title': { es: 'Naturaleza en estado puro', gl: 'Natureza en estado puro', en: 'Pure nature', fr: 'La nature à l\'état pur', de: 'Natur in ihrer reinsten Form', it: 'Natura allo stato puro', pt: 'Natureza em estado puro' },
+  'features.air.desc': { es: 'Un destino esculpido por el mar', gl: 'Un destino esculpido polo mar', en: 'A destination sculpted by the sea', fr: 'Une destination sculptée par la mer', de: 'Ein vom Meer geformtes Reiseziel', it: 'Una destinazione scolpita dal mare', pt: 'Um destino esculpido pelo mar' },
 
   // House
   'house.title': { es: 'Un hogar lejos de casa', gl: 'Un fogar lonxe da casa', en: 'A home away from home', fr: 'Une maison loin de chez soi', de: 'Ein Zuhause fern von Zuhause', it: 'Una casa lontano da casa', pt: 'Um lar longe de casa' },
@@ -90,13 +90,13 @@ const translations: Translations = {
   // Location
   'location.title': { es: 'Naturaleza en estado puro', gl: 'Natureza en estado puro', en: 'Pure nature', fr: 'Nature pure', de: 'Reine Natur', it: 'Natura allo stato puro', pt: 'Natureza em estado puro' },
   'location.description': {
-    es: 'Explora playas salvajes, montañas místicas y pueblos con alma. La Costa da Morte te espera.',
-    gl: 'Explora praias salvaxes, montañas místicas e pobos con alma. A Costa da Morte espérate.',
-    en: 'Explore wild beaches, mystical mountains, and soulful villages. Costa da Morte awaits.',
-    fr: 'Explorez plages sauvages, montagnes mystiques et villages authentiques. La Costa da Morte vous attend.',
-    de: 'Erkunden Sie wilde Strände, mystische Berge und authentische Dörfer. Die Costa da Morte wartet auf Sie.',
-    it: 'Esplora spiagge selvagge, montagne mistiche e villaggi pieni di anima. La Costa da Morte ti aspetta.',
-    pt: 'Explore praias selvagens, montanhas místicas e aldeias com alma. A Costa da Morte espera por si.'
+    es: 'Allí donde la memoria del océano habita en la roca y la tierra abraza el eterno latido del Atlántico.',
+    gl: 'Alí onde a memoria do océano habita na rocha e a terra abraza o eterno latexo do Atlántico.',
+    en: "There where the ocean's memory dwells in the rock and the land embraces the eternal heartbeat of the Atlantic.",
+    fr: "Là où la mémoire de l'océan habite la roche et la terre embrasse le battement éternel de l'Atlantique.",
+    de: 'Dort, wo das Gedächtnis des Ozeans im Fels wohnt und die Erde den ewigen Herzschlag des Atlantiks umarmt.',
+    it: "Lì dove la memoria dell'oceano abita nella roccia e la terra abbraccia l'eterno battito dell'Atlantico.",
+    pt: 'Ali onde a memória do oceano habita na rocha e a terra abraça o eterno pulsar do Atlântico.'
   },
 
   // Experiences

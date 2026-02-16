@@ -23,7 +23,8 @@ export function Features() {
     },
     {
       icon: Wind,
-      title: t('features.air.desc'),
+      title: t('features.air.title'),
+      description: t('features.air.desc'),
     },
   ];
 
