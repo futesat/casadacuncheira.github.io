@@ -109,7 +109,7 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                                             className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all font-medium"
                                         >
                                             <Globe className="w-4 h-4" />
-                                            Sitio Web
+                                            {t('gastronomy.website')}
                                         </a>
                                         {rest.googleMaps && (
                                             <a
@@ -119,7 +119,7 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                                                 className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all font-medium"
                                             >
                                                 <Map className="w-4 h-4" />
-                                                Ver en Google Maps
+                                                {t('gastronomy.googleMaps')}
                                             </a>
                                         )}
                                     </div>
@@ -139,8 +139,8 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                     className="max-w-2xl mx-auto"
                 >
                     <UtensilsCrossed className="w-12 h-12 text-primary mx-auto mb-6 opacity-50" />
-                    <h2 className="text-3xl font-light mb-8">¿Deseas más recomendaciones personales?</h2>
-                    <p className="text-muted-foreground mb-12">Estamos encantados de ayudarte a encontrar el lugar perfecto para cada ocasión durante tu estancia.</p>
+                    <h2 className="text-3xl font-light mb-8">{t('gastronomy.cta.title')}</h2>
+                    <p className="text-muted-foreground mb-12">{t('gastronomy.cta.desc')}</p>
                     <button
                         onClick={() => {
                             onBack();
