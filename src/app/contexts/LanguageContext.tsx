@@ -171,6 +171,26 @@ const translations: Translations = {
   'experiences.sunset.desc': { es: 'Observa las mejores puestas de sol de Galicia', gl: 'Observa as mellores postas de sol de Galicia', en: 'Watch the best sunsets in Galicia', fr: 'Observez les meilleurs couchers de soleil de Galice', de: 'Beobachten Sie die besten Sonnenuntergänge in Galizien', it: 'Guarda i migliori tramonti della Galizia', pt: 'Veja os mejores pores do sol da Galiza' },
   'experiences.villages.title': { es: 'Pueblos Marineros', gl: 'Pobos Mariñeiros', en: 'Seafaring Villages', fr: 'Villages de Pêcheurs', de: 'Seefahrerdörfer', it: 'Villaggi Marinari', pt: 'Aldeias de Pescadores' },
   'experiences.villages.desc': { es: 'Visita Muros, Cee y otros pueblos con historia', gl: 'Visita Muros, Cee e outros pobos con historia', en: 'Visit Muros, Cee, and other historic villages', fr: 'Visitez Muros, Cee et d\'autres villages chargés d\'histoire', de: 'Besuchen Sie Muros, Cee und andere geschichtsträchtige Dörfer', it: 'Visita Muros, Cee e altri borghi storici', pt: 'Visite Muros, Cee e outras aldeias históricas' },
+
+  // Weather
+  'weather.title': {
+    es: 'El tiempo en la Costa da Morte',
+    gl: 'O tempo na Costa da Morte',
+    en: 'Weather in Costa da Morte',
+    fr: 'Le temps sur la Costa da Morte',
+    de: 'Das Wetter an der Costa da Morte',
+    it: 'Il tempo nella Costa da Morte',
+    pt: 'O tempo na Costa da Morte'
+  },
+  'weather.description': {
+    es: 'Radar en tiempo real y previsión meteorológica para planificar tu estancia.',
+    gl: 'Radar en tempo real e previsión meteorolóxica para planificar a túa estancia.',
+    en: 'Real-time radar and weather forecast to plan your stay.',
+    fr: 'Radar en temps réel et prévisions météorologiques pour planifier votre séjour.',
+    de: 'Echtzeit-Radar und Wettervorhersage zur Planung Ihres Aufenthalts.',
+    it: 'Radar in tempo reale e previsioni del tempo para pianificare il tuo soggiorno.',
+    pt: 'Radar em tempo real e previsão meteorológica para planejar a sua estadia.'
+  },
 };
 
 interface LanguageContextType {
