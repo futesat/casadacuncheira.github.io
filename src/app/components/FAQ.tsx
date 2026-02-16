@@ -33,7 +33,7 @@ export function FAQ() {
   ];
 
   return (
-    <section className="py-24 bg-muted">
+    <section id="faq" className="py-24 bg-muted">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,9 +66,8 @@ export function FAQ() {
               >
                 <span className="pr-8">{faq.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-muted-foreground transition-transform flex-shrink-0 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
+                  className={`w-5 h-5 text-muted-foreground transition-transform flex-shrink-0 ${openIndex === index ? 'rotate-180' : ''
+                    }`}
                 />
               </button>
 

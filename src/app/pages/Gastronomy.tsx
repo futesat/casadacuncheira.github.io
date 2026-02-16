@@ -1,7 +1,8 @@
 import { motion } from 'motion/react';
-import { UtensilsCrossed, ArrowLeft, Star, MapPin, Globe } from 'lucide-react';
+import { UtensilsCrossed, ArrowLeft, Star, MapPin, Globe, Phone, Map } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ImageWithFallback } from '../components/ui/ImageWithFallback';
+import { getRestaurants, Restaurant } from '../constants/restaurants';
 
 interface GastronomyProps {
     onBack: () => void;
@@ -10,35 +11,7 @@ interface GastronomyProps {
 export function Gastronomy({ onBack }: GastronomyProps) {
     const { t } = useLanguage();
 
-    const restaurants = [
-        {
-            name: t('gastronomy.morosa.title'),
-            description: t('gastronomy.morosa.desc'),
-            image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80',
-            location: 'Portocubelo, Lira',
-            type: 'Creativa / Local',
-            rating: 5,
-            website: 'https://amorosa.es/',
-        },
-        {
-            name: t('gastronomy.chalana.title'),
-            description: t('gastronomy.chalana.desc'),
-            image: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80',
-            location: 'Puerto de Carnota',
-            type: 'Taberna Tradicional',
-            rating: 4.8,
-            website: '#',
-        },
-        {
-            name: 'O Fogón da Ría',
-            description: 'Especialistas en carnes a la brasa y pescados salvajes. Un ambiente rústico y acogedor.',
-            image: 'https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&q=80',
-            location: 'Muros',
-            type: 'Brasería / Tradicional',
-            rating: 4.7,
-            website: '#',
-        }
-    ];
+    const restaurants: Restaurant[] = getRestaurants(t);
 
     return (
         <div className="min-h-screen bg-background">
@@ -46,7 +19,7 @@ export function Gastronomy({ onBack }: GastronomyProps) {
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/casadacuncheira/images/gastronomy_hero_background_1771260563852.png"
+                        src="/casadacuncheira/images/gastronomy_hero.png"
                         alt="Gastronomy Hero"
                         className="w-full h-full object-cover"
                     />
@@ -112,9 +85,32 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                                         <MapPin className="w-4 h-4" />
                                         {rest.location}
                                     </div>
-                                    <p className="text-muted-foreground leading-relaxed mb-8 line-clamp-3">
+                                    <p className="text-muted-foreground leading-relaxed mb-6 line-clamp-3">
                                         {rest.description}
                                     </p>
+
+                                    <div className="space-y-3 mb-8">
+                                        {rest.phone && (
+                                            <a
+                                                href={`tel:${rest.phone.replace(/\s+/g, '')}`}
+                                                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                            >
+                                                <Phone className="w-4 h-4" />
+                                                {rest.phone}
+                                            </a>
+                                        )}
+                                        {rest.googleMaps && (
+                                            <a
+                                                href={rest.googleMaps}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                                            >
+                                                <Map className="w-4 h-4" />
+                                                Ver en Mapas
+                                            </a>
+                                        )}
+                                    </div>
 
                                     <div className="flex items-center justify-between mt-auto">
                                         <a
@@ -146,7 +142,18 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                     <h2 className="text-3xl font-light mb-8">¿Deseas más recomendaciones personales?</h2>
                     <p className="text-muted-foreground mb-12">Estamos encantados de ayudarte a encontrar el lugar perfecto para cada ocasión durante tu estancia.</p>
                     <button
-                        onClick={onBack}
+                        onClick={() => {
+                            onBack();
+                            setTimeout(() => {
+                                const element = document.getElementById('experiences');
+                                if (element) {
+                                    const headerHeight = 80;
+                                    const elementPosition = element.getBoundingClientRect().top;
+                                    const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+                                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                                }
+                            }, 100);
+                        }}
                         className="px-12 py-4 bg-primary text-white rounded-full hover:bg-primary/90 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
                     >
                         {t('gastronomy.back')}

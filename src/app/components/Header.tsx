@@ -4,7 +4,12 @@ import { Globe, Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { STATIC_TEXTS } from '../constants/static';
 
-export function Header() {
+interface HeaderProps {
+  onNavigateHome?: () => void;
+  currentView?: 'home' | 'gastronomia';
+}
+
+export function Header({ onNavigateHome, currentView }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -29,6 +34,21 @@ export function Header() {
   ];
 
   const scrollToSection = (id: string) => {
+    if (currentView !== 'home' && onNavigateHome) {
+      onNavigateHome();
+      // Wait for Home to mount, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          const headerHeight = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 100);
+      return;
+    }
+
     const element = document.getElementById(id);
     if (element) {
       setShowMobileMenu(false);
@@ -47,6 +67,13 @@ export function Header() {
     }
   };
 
+  const handleLogoClick = () => {
+    if (currentView !== 'home' && onNavigateHome) {
+      onNavigateHome();
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
@@ -59,7 +86,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={handleLogoClick}
             className="flex items-center hover:opacity-70 transition-opacity z-10"
             aria-label={STATIC_TEXTS.brand}
           >

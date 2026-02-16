@@ -37,7 +37,7 @@ const translations: Translations = {
 
   // Hero
   'hero.title': {
-    es: 'Tu refugio en la Costa da Morte',
+    es: 'Tu refugio na Costa da Morte',
     gl: 'O teu refuxio na Costa da Morte',
     en: 'Your retreat in Costa da Morte',
     fr: 'Votre refuge sur la Costa da Morte',
@@ -176,10 +176,7 @@ const translations: Translations = {
   'gastronomy.pageTitle': { es: 'Recomendaciones Gastronómicas', gl: 'Recomendacións Gastronómicas', en: 'Gastronomic Recommendations', fr: 'Recommandations Gastronomiques', de: 'Gastronomische Empfehlungen', it: 'Raccomandazioni Gastronomiche', pt: 'Recomendações Gastronómicas' },
   'gastronomy.pageSubtitle': { es: 'Descubre los mejores sabores de la Costa da Morte, desde mariscos frescos hasta platos tradicionales en un entorno único.', gl: 'Descobre os mellores sabores da Costa da Morte, dende mariscos frescos ata pratos tradicionais nun contorno único.', en: 'Discover the best flavors of Costa da Morte, from fresh seafood to traditional dishes in a unique setting.', fr: 'Découvrez les mejores saveurs de la Costa da Morte, des fruits de mer frais aux plats traditionnels dans un cadre unique.', de: 'Entdecken Sie die besten Aromen der Costa da Morte, von frischen Meeresfrüchten bis hin zu traditionellen Gerichten in einer einzigartigen Umgebung.', it: 'Scopri i migliori sapori della Costa da Morte, dai frutti di mare freschi ai piatti tradizionali in un ambiente unico.', pt: 'Descubra os melhores sabores da Costa da Morte, desde marisco fresco a pratos tradicionais num ambiente único.' },
 
-  'gastronomy.morosa.title': { es: 'A Morosa', gl: 'A Morosa', en: 'A Morosa', fr: 'A Morosa', de: 'A Morosa', it: 'A Morosa', pt: 'A Morosa' },
   'gastronomy.morosa.desc': { es: 'Cocina creativa gallega con productos locales de primera calidad. Un restaurante con encanto y vistas espectaculares.', gl: 'Cociña creativa galega con produtos locais de primeira calidade. Un restaurante con encanto e vistas espectaculares.', en: 'Creative Galician cuisine with top-quality local products. A charming restaurant with spectacular views.', fr: 'Cuisine galicienne créative avec des produits locaux de première qualité. Un restaurant charmant avec des vues spectaculaires.', de: 'Kreative galicische Küche mit erstklassigen lokalen Produkten. Ein charmantes Restaurant mit spektakulärem Ausblick.', it: 'Cucina galiziana creativa con prodotti locali di prima qualità. Un ristorante affascinante con viste spettacolari.', pt: 'Cozinha galega criativa com produtos locais de primeira qualidade. Um restaurante encantador com vistas espectaculares.' },
-
-  'gastronomy.chalana.title': { es: 'A Chalana de Rucho', gl: 'A Chalana de Rucho', en: 'A Chalana de Rucho', fr: 'A Chalana de Rucho', de: 'A Chalana de Rucho', it: 'A Chalana de Rucho', pt: 'A Chalana de Rucho' },
   'gastronomy.chalana.desc': { es: 'Auténtica taberna marinera famosa por su pulpo y marisco fresco. Tradición pura en el puerto de Carnota.', gl: 'Auténtica taberna mariñeira famosa polo seu polbo e marisco fresco. Tradición pura no porto de Carnota.', en: 'Authentic seafood tavern famous for its octopus and fresh shellfish. Pure tradition in the port of Carnota.', fr: 'Authentique taverne de fruits de mer célèbre pour son poulpe et ses fruits de mer frais. Pure tradition sur le port de Carnota.', de: 'Authentische Meeresfrüchte-Taverne, berühmt für ihren Oktopus und frische Meeresfrüchte. Pure Tradition im Hafen von Carnota.', it: 'Autentica taverna di mare famosa per il polpo e i frutti di mare freschi. Pura tradizione nel porto di Carnota.', pt: 'Autêntica taberna marítima famosa pelo seu polvo e marisco fresco. Tradição pura no porto de Carnota.' },
 
   'gastronomy.back': { es: 'Volver al inicio', gl: 'Volver ao inicio', en: 'Back to home', fr: 'Retour à l\'accueil', de: 'Zurück zum Start', it: 'Torna alla home', pt: 'Voltar ao início' },

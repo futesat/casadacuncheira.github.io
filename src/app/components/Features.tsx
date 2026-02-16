@@ -23,13 +23,12 @@ export function Features() {
     },
     {
       icon: Wind,
-      title: t('features.air.title'),
-      description: t('features.air.desc'),
+      title: t('features.air.desc'),
     },
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section id="features" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (

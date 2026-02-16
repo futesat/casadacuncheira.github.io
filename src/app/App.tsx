@@ -26,7 +26,7 @@ export default function App() {
   return (
     <LanguageProvider>
       <div className="min-h-screen bg-background font-['Inter',sans-serif]">
-        <Header />
+        <Header onNavigateHome={() => setView('home')} currentView={view} />
         <main>
           {view === 'home' ? (
             <>
