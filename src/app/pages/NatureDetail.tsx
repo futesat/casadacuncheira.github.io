@@ -57,7 +57,8 @@ export function NatureDetail() {
                 t('nature.ezaro.h1'),
                 t('nature.ezaro.h2'),
                 t('nature.ezaro.h3')
-            ]
+            ],
+            youtubeId: 'zNO89I471V4'
         }
     };
 
@@ -140,6 +141,24 @@ export function NatureDetail() {
                             </motion.div>
                         ))}
                     </div>
+                    {data.youtubeId && (
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            className="mt-20 aspect-video rounded-3xl overflow-hidden shadow-2xl border-border/50 border"
+                        >
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src={`https://www.youtube.com/embed/${data.youtubeId}`}
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </motion.div>
+                    )}
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
