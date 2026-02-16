@@ -10,14 +10,14 @@ export function Location() {
     {
       title: t('location.carnota.title'),
       description: t('location.carnota.desc'),
-      image: 'https://images.unsplash.com/photo-1596733220208-07c16e8c671d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3N0YSUyMGRhJTIwbW9ydGUlMjBnYWxpY2lhJTIwb2NlYW4lMjBjbGlmZnN8ZW58MXx8fHwxNzcxMTA0NzcwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: `${import.meta.env.BASE_URL}images/carnota_beach_optimized.webp`,
       icon: Droplets,
       category: 'nature',
     },
     {
       title: t('location.pindo.title'),
       description: t('location.pindo.desc'),
-      image: 'https://images.unsplash.com/photo-1677405427449-bf49fc251dee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaW5kbyUyMG1vdW50YWluJTIwZ2FsaWNpYXxlbnwxfHx8fDE3NzExMDQ3NzN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: `${import.meta.env.BASE_URL}images/moa_view_optimized.webp`,
       icon: Mountain,
       category: 'nature',
     },
