@@ -1,15 +1,17 @@
 import { motion } from 'motion/react';
 import { Mountain, Droplets, UtensilsCrossed, MapPin } from 'lucide-react';
+import { useNavigate } from 'react-router';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ImageWithFallback } from './ui/ImageWithFallback';
 
 export function Location() {
   const { t } = useLanguage();
-
+  const navigate = useNavigate();
   const places = [
     {
       title: t('location.carnota.title'),
       description: t('location.carnota.desc'),
+      slug: 'praia-carnota',
       image: `${import.meta.env.BASE_URL}images/carnota_beach_optimized.webp`,
       icon: Droplets,
       category: 'nature',
@@ -17,6 +19,7 @@ export function Location() {
     {
       title: t('location.pindo.title'),
       description: t('location.pindo.desc'),
+      slug: 'monte-pindo',
       image: `${import.meta.env.BASE_URL}images/moa_view_optimized.webp`,
       icon: Mountain,
       category: 'nature',
@@ -24,16 +27,18 @@ export function Location() {
     {
       title: t('location.louro.title'),
       description: t('location.louro.desc'),
+      slug: 'monte-louro',
       image: `${import.meta.env.BASE_URL}images/monte_louro_optimized.webp`,
       icon: Mountain,
       category: 'nature',
     },
     {
-      title: t('location.villages.title'),
-      description: t('location.villages.desc'),
-      image: 'https://images.unsplash.com/photo-1582144103470-08865b44e454?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYWxpY2lhJTIwZm9yZXN0JTIwbmF0dXJlJTIwZ3JlZW58ZW58MXx8fHwxNzcxMTA0NzcxfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      icon: MapPin,
-      category: 'culture',
+      title: t('location.ezaro.title'),
+      description: t('location.ezaro.desc'),
+      slug: 'fervenza-do-ezaro',
+      image: `${import.meta.env.BASE_URL}images/ezaro.webp`,
+      icon: Droplets,
+      category: 'nature',
     },
   ];
 
@@ -86,7 +91,14 @@ export function Location() {
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-2xl mb-3">{place.title}</h3>
-                <p className="text-muted-foreground">{place.description}</p>
+                <p className="text-muted-foreground mb-6">{place.description}</p>
+                <button
+                  onClick={() => navigate(`/nature/${place.slug}`)}
+                  className="text-primary font-medium hover:gap-2 transition-all flex items-center gap-1 group/btn"
+                >
+                  {t('experiences.more')}
+                  <span className="group-hover/btn:translate-x-1 transition-transform">{'->'}</span>
+                </button>
               </div>
             </motion.div>
           ))}

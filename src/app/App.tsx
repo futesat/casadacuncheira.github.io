@@ -16,6 +16,7 @@ import { Footer } from './components/Footer';
 import { FloatingBookButton } from './components/FloatingBookButton';
 import { Toaster } from 'sonner';
 import { Gastronomy } from './pages/Gastronomy';
+import { NatureDetail } from './pages/NatureDetail';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -42,6 +43,10 @@ function GastronomyPage() {
   return <Gastronomy onBack={() => navigate('/')} />;
 }
 
+function NaturePage() {
+  return <NatureDetail />;
+}
+
 function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -59,6 +64,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/gastronomy" element={<GastronomyPage />} />
+          <Route path="/nature/:slug" element={<NaturePage />} />
         </Routes>
       </main>
       <Footer />
