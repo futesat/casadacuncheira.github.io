@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, useNavigate } from 'react-router';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -16,39 +17,63 @@ import { FloatingBookButton } from './components/FloatingBookButton';
 import { Toaster } from 'sonner';
 import { Gastronomy } from './pages/Gastronomy';
 
-export default function App() {
-  const [view, setView] = useState<'home' | 'gastronomia'>('home');
+function HomePage() {
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <Hero onDiscover={() => { }} />
+      <Features />
+      <House />
+      <Location />
+      <Experiences onNavigateToGastronomy={() => navigate('/gastronomy')} />
+      <WeatherWidget />
+      <Testimonials />
+      <FAQ />
+      <Booking />
+      <Contact />
+    </>
+  );
+}
+
+function GastronomyPage() {
+  const navigate = useNavigate();
+
+  return <Gastronomy onBack={() => navigate('/')} />;
+}
+
+function AppContent() {
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [view]);
+  }, [location.pathname]);
+
+  const currentView = location.pathname === '/gastronomy' ? 'gastronomy' : 'home';
 
   return (
+    <div className="min-h-screen bg-background font-['Inter',sans-serif]">
+      <Header onNavigateHome={() => navigate('/')} currentView={currentView} />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/gastronomy" element={<GastronomyPage />} />
+        </Routes>
+      </main>
+      <Footer />
+      <FloatingBookButton />
+      <Toaster position="top-center" richColors />
+    </div>
+  );
+}
+
+export default function App() {
+  return (
     <LanguageProvider>
-      <div className="min-h-screen bg-background font-['Inter',sans-serif]">
-        <Header onNavigateHome={() => setView('home')} currentView={view} />
-        <main>
-          {view === 'home' ? (
-            <>
-              <Hero onDiscover={() => setView('home')} />
-              <Features />
-              <House />
-              <Location />
-              <Experiences onNavigateToGastronomy={() => setView('gastronomia')} />
-              <WeatherWidget />
-              <Testimonials />
-              <FAQ />
-              <Booking />
-              <Contact />
-            </>
-          ) : (
-            <Gastronomy onBack={() => setView('home')} />
-          )}
-        </main>
-        <Footer />
-        <FloatingBookButton />
-        <Toaster position="top-center" richColors />
-      </div>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <AppContent />
+      </BrowserRouter>
     </LanguageProvider>
   );
 }

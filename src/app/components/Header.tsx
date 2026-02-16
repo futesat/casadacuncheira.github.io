@@ -6,7 +6,7 @@ import { STATIC_TEXTS } from '../constants/static';
 
 interface HeaderProps {
   onNavigateHome?: () => void;
-  currentView?: 'home' | 'gastronomia';
+  currentView?: 'home' | 'gastronomy';
 }
 
 export function Header({ onNavigateHome, currentView }: HeaderProps) {
@@ -44,6 +44,8 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
           window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          // Update URL with hash
+          window.history.pushState(null, '', `#${id}`);
         }
       }, 100);
       return;
@@ -63,6 +65,9 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
           top: offsetPosition,
           behavior: 'smooth'
         });
+
+        // Update URL with hash
+        window.history.pushState(null, '', `#${id}`);
       }, 50);
     }
   };
@@ -72,6 +77,8 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
       onNavigateHome();
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Clear hash from URL
+    window.history.pushState(null, '', window.location.pathname);
   };
 
   return (
@@ -127,6 +134,13 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
                 }`}
             >
               {t('nav.book')}
+            </button>
+            <button
+              onClick={() => scrollToSection('faq')}
+              className={`hover:text-primary transition-colors ${isScrolled ? 'text-foreground' : 'text-white'
+                }`}
+            >
+              {t('nav.faq')}
             </button>
             <button
               onClick={() => scrollToSection('contact')}
@@ -232,6 +246,12 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
                 className="block w-full text-left py-2 hover:text-primary transition-colors"
               >
                 {t('nav.book')}
+              </button>
+              <button
+                onClick={() => scrollToSection('faq')}
+                className="block w-full text-left py-2 hover:text-primary transition-colors"
+              >
+                {t('nav.faq')}
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
