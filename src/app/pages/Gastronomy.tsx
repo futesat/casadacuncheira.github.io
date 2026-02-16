@@ -99,17 +99,6 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                                                 {rest.phone}
                                             </a>
                                         )}
-                                        {rest.googleMaps && (
-                                            <a
-                                                href={rest.googleMaps}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                            >
-                                                <Map className="w-4 h-4" />
-                                                Ver en Mapas
-                                            </a>
-                                        )}
                                     </div>
 
                                     <div className="flex items-center justify-between mt-auto">
@@ -122,6 +111,17 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                                             <Globe className="w-4 h-4" />
                                             Sitio Web
                                         </a>
+                                        {rest.googleMaps && (
+                                            <a
+                                                href={rest.googleMaps}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all font-medium"
+                                            >
+                                                <Map className="w-4 h-4" />
+                                                Ver en Google Maps
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             </motion.div>
