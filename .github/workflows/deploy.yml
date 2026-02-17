@@ -48,6 +48,7 @@ jobs:
       - name: Manual Deploy to External Repo
         run: |
           cd dist
+          echo "www.casadacuncheira.com" > CNAME
           touch .nojekyll
           git init
           git checkout -b main
