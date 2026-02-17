@@ -30,6 +30,7 @@ export function NatureDetail() {
     const natureData: Record<string, any> = {
         'praia-carnota': {
             title: t('location.carnota.title'),
+            summary: t('location.carnota.desc'),
             description: t('location.carnota.longDesc'),
             image: `${import.meta.env.BASE_URL}images/carnota_beach_optimized.webp`,
             location: 'Carnota, A Coruña',
@@ -41,6 +42,7 @@ export function NatureDetail() {
         },
         'monte-pindo': {
             title: t('location.pindo.title'),
+            summary: t('location.pindo.desc'),
             description: t('location.pindo.longDesc'),
             image: `${import.meta.env.BASE_URL}images/moa_view_optimized.webp`,
             location: 'Carnota, A Coruña',
@@ -52,6 +54,7 @@ export function NatureDetail() {
         },
         'monte-louro': {
             title: t('location.louro.title'),
+            summary: t('location.louro.desc'),
             description: t('location.louro.longDesc'),
             image: `${import.meta.env.BASE_URL}images/monte_louro_optimized.webp`,
             location: 'Louro, Muros',
@@ -63,6 +66,7 @@ export function NatureDetail() {
         },
         'fervenza-do-ezaro': {
             title: t('location.ezaro.title'),
+            summary: t('location.ezaro.desc'),
             description: t('location.ezaro.longDesc'),
             image: `${import.meta.env.BASE_URL}images/ezaro.webp`,
             location: 'Ézaro, Dumbría',
@@ -75,6 +79,7 @@ export function NatureDetail() {
         },
         'cabo-finisterre': {
             title: t('location.fisterra.title'),
+            summary: t('location.fisterra.desc'),
             description: t('location.fisterra.longDesc'),
             image: `${import.meta.env.BASE_URL}images/fisterra_optimized.webp`,
             location: 'Fisterra, A Coruña',
@@ -143,12 +148,14 @@ export function NatureDetail() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="prose prose-lg max-w-none text-muted-foreground leading-relaxed italic mb-16 text-center text-xl"
+                        className="text-center mb-16"
                     >
-                        "{data.description}"
+                        <p className="text-2xl font-light text-muted-foreground italic leading-relaxed">
+                            "{data.summary}"
+                        </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
                         {data.highlights.map((highlight: string, index: number) => (
                             <motion.div
                                 key={index}
@@ -165,6 +172,84 @@ export function NatureDetail() {
                             </motion.div>
                         ))}
                     </div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="max-w-none text-muted-foreground leading-relaxed mb-16 text-lg"
+                    >
+                        {(() => {
+                            const lines = data.description.split('\n');
+                            const elements: React.ReactNode[] = [];
+                            let currentList: string[] = [];
+
+                            const flushList = (key: string | number) => {
+                                if (currentList.length > 0) {
+                                    elements.push(
+                                        <ul key={`ul-${key}`} className="space-y-4 mb-8 ml-6">
+                                            {currentList.map((item, li) => (
+                                                <li key={li} className="flex gap-3 text-muted-foreground">
+                                                    <span className="text-primary/60 mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-current" />
+                                                    <span className="font-light leading-relaxed">{item.replace('•', '').trim()}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    );
+                                    currentList = [];
+                                }
+                            };
+
+                            lines.forEach((line: string, i: number) => {
+                                const trimmedLine = line.trim();
+                                if (!trimmedLine) {
+                                    flushList(i);
+                                    return;
+                                }
+
+                                // 1. Header detection (Main sections)
+                                const isHeader = trimmedLine.length < 60 &&
+                                    !trimmedLine.endsWith('.') &&
+                                    !trimmedLine.endsWith(':') &&
+                                    !trimmedLine.startsWith('•') &&
+                                    !trimmedLine.startsWith('-');
+
+                                // 2. List Header detection (e.g., "Otros lugares destacados:")
+                                const isListHeader = trimmedLine.endsWith(':') && !trimmedLine.startsWith('•');
+
+                                // 3. Bullet detection
+                                const isBullet = trimmedLine.startsWith('•') || trimmedLine.startsWith('-');
+
+                                if (isHeader) {
+                                    flushList(i);
+                                    elements.push(
+                                        <h3 key={`h3-${i}`} className="text-2xl font-medium text-foreground mt-14 mb-8 first:mt-0 pb-3 border-b border-primary/10 tracking-tight">
+                                            {trimmedLine}
+                                        </h3>
+                                    );
+                                } else if (isListHeader) {
+                                    flushList(i);
+                                    elements.push(
+                                        <p key={`lh-${i}`} className="text-foreground font-medium mb-4 mt-6">
+                                            {trimmedLine}
+                                        </p>
+                                    );
+                                } else if (isBullet) {
+                                    currentList.push(trimmedLine);
+                                } else {
+                                    flushList(i);
+                                    elements.push(
+                                        <p key={`p-${i}`} className="mb-6 font-light leading-relaxed">
+                                            {trimmedLine}
+                                        </p>
+                                    );
+                                }
+                            });
+                            flushList('final');
+                            return elements;
+                        })()}
+                    </motion.div>
+
                     {data.youtubeId && (
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}

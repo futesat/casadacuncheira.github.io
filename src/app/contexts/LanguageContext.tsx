@@ -60,7 +60,7 @@ const translations: Translations = {
   // Features
   'features.atlantic.title': { es: 'Costa Atlántica', gl: 'Costa Atlántica', en: 'Atlantic Coast', fr: 'Côte Atlantique', de: 'Atlantikküste', it: 'Costa Atlantica', pt: 'Costa Atlântica' },
   'features.atlantic.desc': { es: 'Playas salvajes y horizontes infinitos', gl: 'Praias salvaxes e horizontes infinitos', en: 'Wild beaches and infinite horizons', fr: 'Plages sauvages et horizons infinis', de: 'Wilde Strände und unendliche Horizonte', it: 'Spiagge selvagge e orizzonti infiniti', pt: 'Praias selvagens e horizontes infinitos' },
-  'features.pindo.title': { es: 'Monte Pindo', gl: 'Monte Pindo', en: 'Mount Pindo', fr: 'Mont Pindo', de: 'Berg Pindo', it: 'Monte Pindo', pt: 'Monte Pindo' },
+  'features.pindo.title': { es: 'Monte Pindo', gl: 'Monte Pindo', en: 'Monte Pindo', fr: 'Monte Pindo', de: 'Monte Pindo', it: 'Monte Pindo', pt: 'Monte Pindo' },
   'features.pindo.desc': { es: 'El Olimpo celta con vistas únicas', gl: 'O Olimpo celta con vistas únicas', en: 'The Celtic Olympus with unique views', fr: 'L\'Olympe celtique avec des vues uniques', de: 'Der keltische Olymp mit einzigartigen Aussichten', it: 'L\'Olimpo celtico con viste uniche', pt: 'O Olimpo celta com vistas únicas' },
   'features.sunset.title': { es: 'Atardeceres Mágicos', gl: 'Atardeceres Máxicos', en: 'Magical Sunsets', fr: 'Couchers de soleil magiques', de: 'Magische Sonnenuntergänge', it: 'Tramonti magici', pt: 'Pôr do sol mágico' },
   'features.sunset.desc': { es: 'Las mejores puestas de sol de Galicia', gl: 'As mellores postas de sol de Galicia', en: 'The best sunsets in Galicia', fr: 'Les meilleurs couchers de soleil de Galice', de: 'Die besten Sonnenuntergänge in Galizien', it: 'I migliori tramonti della Galizia', pt: 'O melhor pôr do sol da Galiza' },
@@ -166,16 +166,170 @@ const translations: Translations = {
   'nature.carnota.h2': { es: 'Marismas de Caldebarcos', gl: 'Marismas de Caldebarcos', en: 'Caldebarcos Marshes', fr: 'Marais de Caldebarcos', de: 'Caldebarcos-Sümpfe', it: 'Paludi di Caldebarcos', pt: 'Pântanos de Caldebarcos' },
   'nature.carnota.h3': { es: 'Boca do Río', gl: 'Boca do Río', en: 'Boca do Río River Mouth', fr: 'Embouchure de Boca do Río', de: 'Flussmündung Boca do Río', it: 'Foce del Boca do Río', pt: 'Foz do Boca do Río' },
 
-  'location.pindo.title': { es: 'Monte Pindo', gl: 'Monte Pindo', en: 'Mount Pindo', fr: 'Mont Pindo', de: 'Berg Pindo', it: 'Monte Pindo', pt: 'Monte Pindo' },
+  'location.pindo.title': { es: 'Monte Pindo', gl: 'Monte Pindo', en: 'Monte Pindo', fr: 'Monte Pindo', de: 'Monte Pindo', it: 'Monte Pindo', pt: 'Monte Pindo' },
   'location.pindo.desc': { es: 'El Olimpo celta, con vistas espectaculares del Atlántico', gl: 'O Olimpo celta, con vistas espectaculares do Atlántico', en: 'The Celtic Olympus, with spectacular views of the Atlantic', fr: 'L\'Olympe celtique, avec des vues spectaculaires sur l\'Atlantique', de: 'Der keltische Olymp mit spektakulärem Blick auf den Atlantik', it: 'L\'Olimpo celtico, con vistas espectaculares sull\'Atlantico', pt: 'O Olimpo celta, con vistas espetaculares do Atlántico' },
   'location.pindo.longDesc': {
-    es: 'El Monte Pindo, conocido como el Olimpo Celta, es un macizo de granito rosa que se alza sobre el Atlántico, envuelto en leyendas y formas caprichosas esculpidas por el viento.',
-    gl: 'O Monte Pindo, coñecido como o Olimpo Celta, é un macizo de granito rosa que se ergue sobre o Atlántico, envolto en lendas e formas caprichosas esculpidas polo vento.',
-    en: 'Mount Pindo, known as the Celtic Olympus, is a pink granite massif that rises above the Atlantic, shrouded in legends and whimsical shapes sculpted by the wind.',
-    fr: 'Le Mont Pindo, connu sous le nom d\'Olympe Celtique, est un massif de granit rose qui s\'élève au-dessus de l\'Atlantique, enveloppé de légendes et de formes fantaisistes sculptées par le vent.',
-    de: 'Der Berg Pindo, bekannt als der keltische Olymp, ist ein rosa Granitmassiv, das sich über dem Atlantik erhebt, umhüllt von Legenden und skurrilen, vom Wind geformten Gestalten.',
-    it: 'Il Monte Pindo, noto come l\'Olimpo Celtico, è un massiccio di granito rosa che svetta sull\'Atlantico, avvolto in leggende e forme bizzarre scolpite dal vento.',
-    pt: 'O Monte Pindo, conhecido como o Olimpo Celta, é um maciço de granito rosa que se ergue sobre o Atlántico, envolto en lendas e formas caprichosas esculpidas polo vento.'
+    es: `El Monte Pindo, conocido como el “Olimpo Celta”, es uno de los parajes más emblemáticos de A Costa da Morte, junto a la playa de Carnota y la cascada de Ézaro. Este macizo granítico se sitúa entre Dumbría, Carnota y Mazaricos (A Coruña) y forma parte de la Red Natura 2000 como Zona Especial de Conservación. Abarca también terrenos de Cee y cuenta con 4.628,87 hectáreas, de las que 438 son marinas.
+
+Cómo llegar
+La forma más sencilla de acceder es por la carretera AC-550 (Cee–Carnota) hasta la localidad de O Pindo, donde comienza la ruta más popular. El punto de salida está junto a la iglesia del pueblo, donde hay panel informativo y aparcamiento.
+
+La subida a A Moa
+La ruta más conocida conduce a A Moa (627 m), la cima del monte. Es de dificultad media, con tramos de pendiente pronunciada desde el nivel del mar. La subida dura entre 2 y 2,5 horas (la bajada, alrededor de 1,5 horas). El recorrido está señalizado con balizas blancas y verdes. Como referencia, si hay niebla o dudas, conviene mantener el mar a la izquierda.
+
+Se recomienda llevar calzado adecuado, agua, protección solar y ropa cómoda. El primer tramo atraviesa una zona más húmeda y con vegetación; después predominan las pendientes abiertas y las formaciones rocosas.
+
+Paisaje y puntos de interés
+Desde la cima se obtienen vistas panorámicas de la ría de Cee y Corcubión, el cabo Fisterra y la playa de Carnota, la más extensa de Galicia. El granito, modelado por la erosión, forma figuras singulares como O Xigante.
+
+Otros lugares destacados:
+• A Moa: el punto más alto y uno de los mejores miradores de la comarca.
+• Las murallas: restos de construcciones pétreas, posiblemente de los siglos IV-VI.
+• Castillo de San Xurxo: antigua torre defensiva del siglo X, hoy desaparecida, vinculada a la defensa frente a incursiones marítimas.
+• Chan de Lourenzo: pradera cercana a la cima con restos de una antigua mina de wolframio.
+
+Naturaleza
+El entorno destaca por su biodiversidad: se han catalogado 625 especies de flora, fauna y hongos. Entre ellas sobresale el roble enano (Quercus lusitanica), que tiene aquí su único hábitat en Galicia.
+
+El Monte Pindo es, en definitiva, una visita imprescindible para quienes recorren A Costa da Morte: naturaleza singular, panorámicas espectaculares y un paisaje cargado de historia y leyenda.`,
+    gl: `O Monte Pindo, coñecido como o “Olimpo Celta”, é unha das paraxes máis emblemáticas da Costa da Morte, xunto á praia de Carnota e a fervenza do Ézaro. Este macizo granítico sitúase entre Dumbría, Carnota e Mazaricos (A Coruña) e forma parte da Rede Natura 2000 como Zona Especial de Conservación. Abarca tamén terreos de Cee e conta con 4.628,87 hectáreas, das que 438 son mariñas.
+
+Como chegar
+A forma máis sinxela de acceder é pola estrada AC-550 (Cee–Carnota) ata a localidade do Pindo, onde comeza a ruta máis popular. O punto de saída está a carón da igrexa do pobo, onde hai panel informativo e aparcadoiro.
+
+A subida á Moa
+A ruta máis coñecida conduce á Moa (627 m), a cima do monte. É de dificultade media, con treitos de pendente pronunciada desde o nivel do mar. A subida dura entre 2 e 2,5 horas (a baixada, arredor de 1,5 horas). O percorrido está sinalizado con balizas brancas e verdes. Como referencia, se hai néboa ou dúbidas, convén manter o mar á esquerda.
+
+Recoméndase levar calzado adecuado, auga, protección solar e roupa cómoda. O primeiro treito atravesa unha zona máis húmida e con vexetación; despois predominan as pendentes abertas e as formacións rochosas.
+
+Paisaxe e puntos de interese
+Desde a cima obtéñense vistas panorámicas da ría de Cee e Corcubión, o cabo Fisterra e a praia de Carnota, a máis extensa de Galicia. O granito, modelado pola erosión, forma figuras singulares como O Xigante.
+
+Outros lugares destacados:
+• A Moa: o punto máis alto e un dos mellores miradoiros da comarca.
+• As murallas: restos de construcións pétreas, posiblemente dos séculos IV-VI.
+• Castelo de San Xurxo: antiga torre defensiva do século X, hoxe desaparecida, vinculada á defensa fronte a incursións marítimas.
+• Chan de Lourenzo: pradeira próxima á cima con restos dunha antiga mina de wolframio.
+
+Natureza
+O contorno destaca pola súa biodiversidade: foron catalogadas 625 especies de flora, fauna e fungos. Entre elas sobresae o carballo anano (Quercus lusitanica), que ten aquí o seu único habitar en Galicia.
+
+O Monte Pindo é, en definitiva, unha visita imprescindible para quen percorre a Costa da Morte: natureza singular, panorámicas espectaculares e unha paisaxe cargada de historia e lenda.`,
+    en: `Mount Pindo, known as the "Celtic Olympus," is one of the most emblematic spots in Costa da Morte, alongside Carnota Beach and the Ézaro Waterfall. This granite massif is located between Dumbría, Carnota, and Mazaricos (A Coruña) and is part of the Natura 2000 Network as a Special Conservation Area. It also covers land in Cee and spans 4,628.87 hectares, of which 438 are marine.
+
+How to get there
+The easiest way to access it is via the AC-550 road (Cee–Carnota) to the town of O Pindo, where the most popular route begins. The starting point is next to the town church, where there is an information board and parking.
+
+The climb to A Moa
+The most famous route leads to A Moa (627 m), the mountain's peak. It is of medium difficulty, with sections of steep incline starting from sea level. The climb takes between 2 and 2.5 hours (the descent takes about 1.5 hours). The path is marked with white and green markers. As a reference, if there is fog or doubt, it is advisable to keep the sea to your left.
+
+It is recommended to wear suitable footwear, bring water, use sun protection, and wear comfortable clothing. The first section passes through a more humid area with vegetation; afterward, open slopes and rocky formations predominate.
+
+Landscape and points of interest
+From the summit, you get panoramic views of the Cee and Corcubión estuary, Cape Finisterre, and Carnota Beach, the longest in Galicia. The granite, shaped by erosion, creates unique figures such as "O Xigante" (The Giant).
+
+Other notable places:
+• A Moa: the highest point and one of the best viewpoints in the region.
+• The walls: remains of stone constructions, possibly from the 4th-6th centuries.
+• San Xurxo Castle: an ancient defensive tower from the 10th century, now gone, linked to defense against maritime raids.
+• Chan de Lourenzo: a meadow near the summit with remains of an old tungsten mine.
+
+Nature
+The environment stands out for its biodiversity: 625 species of flora, fauna, and fungi have been cataloged. Among them, the dwarf oak (Quercus lusitanica) stands out, which has its only habitat in Galicia here.
+
+Mount Pindo is, ultimately, an essential visit for those traveling through Costa da Morte: unique nature, spectacular panoramas, and a landscape steeped in history and legend.`,
+    fr: `Le mont Pindo, connu sous le nom d'« Olympe celtique », est l'un des lieux les plus emblématiques de la Costa da Morte, aux côtés de la plage de Carnota et de la cascade d'Ézaro. Ce massif granitique est situé entre Dumbría, Carnota et Mazaricos (A Coruña) et fait partie du réseau Natura 2000 en tant que zone spéciale de conservation. Il s'étend également sur les terres de Cee et couvre 4 628,87 hectares, dont 438 sont marins.
+
+Comment s'y rendre
+Le moyen le plus simple d'y accéder est de emprunter la route AC-550 (Cee-Carnota) jusqu'à la ville d'O Pindo, où commence l'itinéraire le plus populaire. Le point de départ se trouve à côté de l'église du village, où vous trouverez un panneau d'information et un parking.
+
+La montée vers A Moa
+L'itinéraire le plus célèbre mène à A Moa (627 m), le point culminant de la montagne. La difficulté est moyenne, avec des sections à forte pente depuis le niveau de la mer. La montée dure entre 2h et 2h30 (la descente environ 1h30). L'itinéraire est balisé par des balises blanches et vertes. A titre de référence, s'il y a du brouillard ou des doutes, il convient de garder la mer à gauche.
+
+Il est recommandé de porter des chaussures adaptées, d'apporter de l'eau, une protection solaire et des vêtements confortables. La première partie traverse une zone plus humide et plus végétalisée ; ensuite, les pentes ouvertes et les formations rocheuses prédominent.
+
+Paysage et points d'intérêt
+Du sommet, vous obtenez des vues panoramiques sur l'estuaire de Cee et Corcubión, le cap Finisterre et la plage de Carnota, la plus longue de Galice. Le granit, façonné par l'érosion, forme des figures uniques comme O Xigante (Le Géant).
+
+Autres lieux notables :
+• A Moa : le point culminant et l'un des meilleurs points de vue de la région.
+• Les murailles : restes de constructions en pierre, datant peut-être des IVe-VIe siècles.
+• Château de San Xurxo : ancienne tour défensive du Xe siècle, aujourd'hui disparue, liée à la défense contre les incursions maritimes.
+• Chan de Lourenzo : prairie proche du sommet avec les restes d'une ancienne mine de tungstène.
+
+Nature
+L'environnement se distingue par sa biodiversité : 625 espèces de flore, faune et champignons ont été répertoriées. Parmi elles, se distingue le chêne nain (Quercus lusitanica), qui a ici son seul habitat en Galice.
+
+Le mont Pindo est, en somme, une visite incontournable pour ceux qui visitent la Costa da Morte : une nature unique, des panoramas spectaculaires et un paysage chargé d'histoire et de légendes.`,
+    de: `Der Monte Pindo, bekannt als der „keltische Olymp“, ist einer der emblematischsten Orte an der Costa da Morte, neben dem Strand von Carnota und dem Wasserfall von Ézaro. Dieses Granitmassiv liegt zwischen Dumbría, Carnota und Mazaricos (A Coruña) und ist Teil des Natura-2000-Netzwerks als besonderes Schutzgebiet. Er umfasst auch Gebiete von Cee und erstreckt sich über 4.628,87 Hektar, von denen 438 Hektar Meeresfläche sind.
+
+Wie man dorthin kommt
+Der einfachste Zugang erfolgt über die Straße AC-550 (Cee–Carnota) bis zum Ort O Pindo, wo die beliebteste Route beginnt. Der Ausgangspunkt befindet sich neben der Dorfkirche, wo es eine Informationstafel und Parkplätze gibt.
+
+Der Aufstieg zur A Moa
+Der bekannteste Weg führt zur A Moa (627 m), dem Gipfel des Berges. Er ist von mittlerem Schwierigkeitsgrad, mit steilen Abschnitten ab Meereshöhe. Der Aufstieg dauert zwischen 2 und 2,5 Stunden (der Abstieg etwa 1,5 Stunden). Die Strecke ist mit weiß-grünen Markierungen gekennzeichnet. Als Orientierungshilfe bei Nebel oder Zweifeln empfiehlt es sich, das Meer zur Linken zu behalten.
+
+Es wird empfohlen, geeignetes Schuhwerk, Wasser, Sonnenschutz und bequeme Kleidung mitzubringen. Der erste Abschnitt führt durch ein feuchteres Gebiet mit Vegetation, danach dominieren offene Hänge und Felsformationen.
+
+Landschaft und Sehenswürdigkeiten
+Vom Gipfel aus hat man einen Panoramablick auf die Bucht von Cee und Corcubión, das Kap Finisterre und den Strand von Carnota, den längsten Galiciens. Der Granit, durch Erosion geformt, bildet einzigartige Figuren wie O Xigante (Der Riese).
+
+Weitere Höhepunkte:
+• A Moa: der höchste Punkt und einer der besten Aussichtspunkte der Region.
+• Die Mauern: Reste von Steinbauten, möglicherweise aus dem 4. bis 6. Jahrhundert.
+• Burg von San Xurxo: alter Verteidigungsturm aus dem 10. Jahrhundert, heute verschwunden, verbunden mit der Verteidigung gegen Seeüberfälle.
+• Chan de Lourenzo: Wiese in Gipfelnähe mit Resten einer alten Wolframmine.
+
+Natur
+Die Umgebung zeichnet sich durch ihre Artenvielfalt aus: 625 Arten von Flora, Fauna und Pilzen wurden katalogisiert. Unter ihnen sticht die Zwergeiche (Quercus lusitanica) hervor, die hier ihren einzigen Lebensraum in Galicien hat.
+
+Der Monte Pindo ist definitiv ein Muss für jeden Besucher der Costa da Morte: einzigartige Natur, spektakuläre Ausblicke und eine Landschaft voller Geschichte und Legenden.`,
+    it: `Monte Pindo, conosciuto come l'“Olimpo Celtico”, è uno dei luoghi più emblematici della Costa da Morte, insieme alla spiaggia di Carnota e alla cascata dell'Ézaro. Questo massiccio granitico si trova tra Dumbría, Carnota e Mazaricos (La Coruña) e fa parte della Rete Natura 2000 come Zona Speciale di Confederazione. Comprende anche terreni di Cee e dispone di 4.628,87 ettari, di cui 438 marini.
+
+Come arrivare
+Il modo più semplice per accedere è attraverso la strada AC-550 (Cee–Carnota) fino alla località di O Pindo, dove inizia il percorso più popolare. Il punto di partenza è vicino alla chiesa del paese, dove si trova un pannello informativo e un parcheggio.
+
+La salita ad A Moa
+Il percorso più famoso porta ad A Moa (627 m), la cima del monte. È di media difficoltà, con tratti di forte pendenza a partire dal livello del mare. La salita dura tra le 2 e le 2,5 ore (la discesa circa 1,5 ore). Il percorso è segnalato con segnavia bianchi e verdi. Come riferimento, in caso di nebbia o dubbi, conviene tenere il mare sulla sinistra.
+
+Si consiglia di indossare calzature adeguate, portare acqua, protezione solare e abbigliamento comodo. Il primo tratto attraversa una zona più umida e con vegetazione; successivamente predominano pendii aperti e formazioni rocciose.
+
+Paesaggio e punti di interesse
+Dalla vetta si ottengono viste panoramiche sull'estuario di Cee e Corcubión, sul capo Finisterre e sulla spiaggia di Carnota, la più estesa della Galizia. Il granito, modellato dall'erosione, forma figure singolari come O Xigante (Il Gigante).
+
+Altri luoghi degni di nota:
+• A Moa: il punto più alto e uno dei migliori punti panoramici della regione.
+• Le mura: resti di costruzioni in pietra, probabilmente risalenti ai secoli IV-VI.
+• Castello di San Xurxo: antica torre difensiva del X secolo, oggi scomparsa, legata alla difesa contro le incursioni marittime.
+• Chan de Lourenzo: prato vicino alla vetta con i resti di un'antica miniera di tungsteno.
+
+Naturalezza
+L'ambiente si distingue per la sua biodiversità: sono state catalogate 625 specie tra flora, fauna e funghi. Tra queste spicca la quercia nana (Quercus lusitanica), che qui ha il suo unico habitat in Galizia.
+
+Il Monte Pindo è, in definitiva, una visita imperdibile per chi percorre la Costa da Morte: natura singolare, panorami spettacolari e un paesaggio carico di storia e leggenda.`,
+    pt: `O Monte Pindo, conhecido como o “Olimpo Celta”, é um dos lugares mais emblemáticos da Costa da Morte, junto à praia de Carnota e à cascata do Ézaro. Este maciço granítico situa-se entre Dumbría, Carnota e Mazaricos (A Coruña) e faz parte da Rede Natura 2000 como Zona Especial de Conservação. Abrange também terrenos de Cee e conta com 4.628,87 hectares, dos quais 438 são marinhos.
+
+Como chegar
+A forma mais fácil de aceder é pola estrada AC-550 (Cee–Carnota) até á localidade do Pindo, onde começa a rota mais popular. O ponto de partida é junto à igreja da vila, onde existe um painel informativo e estacionamento.
+
+A subida à Moa
+A rota mais conhecida leva à Moa (627 m), o cume do monte. É de dificuldade média, com trechos de declive acentuado desde o nível do mar. A subida dura entre 2 e 2,5 horas (a descida, cerca de 1,5 horas). O percurso está sinalizado com balizas brancas e verdes. Como referência, se houver nevoeiro ou dúvidas, convém manter o mar à esquerda.
+
+Recomenda-se levar calzado adequado, água, proteção solar e roupa confortável. O primeiro trecho atraviesa uma zona mais húmida e com vegetación; depois predominam as encostas abertas e as formações rochosas.
+
+Paisagem e pontos de interesse
+Do cume obtêm-se vistas panorámicas da ria de Cee e Corcubión, do cabo Fisterra e da praia de Carnota, a mais extensa da Galiza. O granito, moldado pela erosão, forma figuras singulares como O Xigante.
+
+Outros lugares de destaque:
+• A Moa: o ponto mais alto e um dos melhores miradouros da região.
+• As muralhas: restos de construções de pedra, possivelmente dos séculos IV-VI.
+• Castelo de San Xurxo: antiga torre defensiva do século X, hoje desaparecida, ligada à defesa contra incursões marítimas.
+• Chan de Lourenzo: pradeira próxima ao cume com restos de uma antiga mina de tungsténio.
+
+Naturaleza
+O ambiente destaca-se pela sua biodiversidade: foram catalogadas 625 espécies de flora, fauna e fungos. Entre elas sobressai o carvalho-anão (Quercus lusitanica), que tem aqui o seu único habitat na Galiza.
+
+O Monte Pindo é, em suma, uma visita essencial para quem percorre a Costa da Morte: natureza singular, panorâmicas espetaculares e uma paisagem carregada de história e lenda.`
   },
   'nature.pindo.h1': { es: 'Cima de A Moa (627m)', gl: 'Cima de A Moa (627m)', en: 'A Moa Peak (627m)', fr: 'Sommet d\'A Moa (627m)', de: 'A Moa Gipfel (627m)', it: 'Cima di A Moa (627m)', pt: 'Pico de A Moa (627m)' },
   'nature.pindo.h2': { es: 'Leyendas Celtas', gl: 'Lendas Celtas', en: 'Celtic Legends', fr: 'Légendes Celtiques', de: 'Keltische Legenden', it: 'Leggende Celtiche', pt: 'Lendas Celtas' },
