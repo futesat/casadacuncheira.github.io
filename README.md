@@ -7,7 +7,7 @@
 🚀 **Ver en vivo:** [https://casadacuncheira.github.io/](https://casadacuncheira.github.io/)
 
 ---
-
+ 
 ## ✨ Características Principales
 
 - 🌍 **Soporte Multilingüe:** Disponible en 7 idiomas (Español, Gallego, Inglés, Francés, Alemán, Italiano y Portugués) con traducciones completas en todas las secciones.
