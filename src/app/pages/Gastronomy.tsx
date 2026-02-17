@@ -19,7 +19,7 @@ export function Gastronomy({ onBack }: GastronomyProps) {
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/casadacuncheira/images/gastronomy_hero.png"
+                        src={`${import.meta.env.BASE_URL}images/gastronomy_hero.png`}
                         alt="Gastronomy Hero"
                         className="w-full h-full object-cover"
                     />
@@ -156,7 +156,7 @@ export function Gastronomy({ onBack }: GastronomyProps) {
                         }}
                         className="px-12 py-4 bg-primary text-white rounded-full hover:bg-primary/90 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
                     >
-                        {t('gastronomy.back')}
+                        {t('common.back')}
                     </button>
                 </motion.div>
             </section>
