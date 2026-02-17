@@ -13,11 +13,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -33,18 +36,18 @@ jobs:
           name: build-assets
           path: ./dist
 
+  # Deployment job
   deploy:
+    environment:
+      name: production
+      url: https://casadacuncheira.github.io/
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Verify Secret Presence
-        run: |
-          if [ -z "${{ secrets.DEPLOY_TOKEN }}" ]; then
-            echo "❌ ERROR: DEPLOY_TOKEN not found in repository secrets."
-            exit 1
-          else
-            echo "✅ DEPLOY_TOKEN detected, proceeding..."
-          fi
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Download artifact
         uses: actions/download-artifact@v4
@@ -52,13 +55,11 @@ jobs:
           name: build-assets
           path: dist
 
-      - name: Manual Deploy to External Repo
-        run: |
-          cd dist
-          git init
-          git checkout -b main
-          git config user.name "casadacuncheira"
-          git config user.email "casadacuncheira@nomail.com"
-          git add .
-          git commit -m "Deploy to production"
-          git push -f https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/casadacuncheira/casadacuncheira.github.io.git main
+      - name: Deploy to External Repository
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          repository-name: casadacuncheira/casadacuncheira.github.io
+          branch: main
+          folder: dist
+          clean: true
