@@ -61,4 +61,4 @@ jobs:
           git config user.email "casadacuncheira@nomail.com"
           git add .
           git commit -m "Deploy to production"
-          git push -f https://futesat:${{ secrets.DEPLOY_TOKEN }}@github.com/casadacuncheira/casadacuncheira.github.io.git main
+          git push -f https://x-access-token:${{ secrets.DEPLOY_TOKEN }}@github.com/casadacuncheira/casadacuncheira.github.io.git main
