@@ -128,20 +128,22 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
             >
               {t('nav.experiences')}
             </button>
-            <button
-              onClick={() => scrollToSection('booking')}
+            <a
+              href="https://puntainsua.com/en/casa-da-cuncheira"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`hover:text-primary transition-colors ${isScrolled ? 'text-foreground' : 'text-white'
                 }`}
             >
               {t('nav.book')}
-            </button>
-            <button
+            </a>
+            {/* <button
               onClick={() => scrollToSection('faq')}
               className={`hover:text-primary transition-colors ${isScrolled ? 'text-foreground' : 'text-white'
                 }`}
             >
               {t('nav.faq')}
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection('contact')}
               className={`hover:text-primary transition-colors ${isScrolled ? 'text-foreground' : 'text-white'
@@ -241,18 +243,20 @@ export function Header({ onNavigateHome, currentView }: HeaderProps) {
               >
                 {t('nav.experiences')}
               </button>
-              <button
-                onClick={() => scrollToSection('booking')}
+              <a
+                href="https://puntainsua.com/en/casa-da-cuncheira"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-left py-2 hover:text-primary transition-colors"
               >
                 {t('nav.book')}
-              </button>
-              <button
+              </a>
+              {/* <button
                 onClick={() => scrollToSection('faq')}
                 className="block w-full text-left py-2 hover:text-primary transition-colors"
               >
                 {t('nav.faq')}
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection('contact')}
                 className="block w-full text-left py-2 hover:text-primary transition-colors"

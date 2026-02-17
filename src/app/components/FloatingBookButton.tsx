@@ -18,10 +18,7 @@ export function FloatingBookButton() {
   }, []);
 
   const handleClick = () => {
-    const element = document.getElementById('booking');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.open('https://puntainsua.com/en/casa-da-cuncheira', '_blank', 'noopener,noreferrer');
   };
 
   if (!isVisible) return null;
