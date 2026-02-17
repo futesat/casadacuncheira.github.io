@@ -56,8 +56,8 @@ jobs:
         run: |
           cd dist
           git init
-          git config user.name "futesat"
-          git config user.email "[EMAIL_ADDRESS]"
+          git config user.name "casadacuncheira"
+          git config user.email "casadacuncheira@nomail.com"
           git add .
           git commit -m "Deploy to production"
           git push -f https://futesat:${{ secrets.DEPLOY_TOKEN }}@github.com/casadacuncheira/casadacuncheira.github.io.git main
