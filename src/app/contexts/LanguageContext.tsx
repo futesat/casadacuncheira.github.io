@@ -222,6 +222,25 @@ const translations: Translations = {
   'experiences.gastro.duration': { es: '2-3h', gl: '2-3h', en: '2-3h', fr: '2-3h', de: '2-3h', it: '2-3h', pt: '2-3h' },
   'experiences.kayak.title': { es: 'Kayak por la Costa', gl: 'Kaiak pola Costa', en: 'Coastal Kayaking', fr: 'Kayak Côtier', de: 'Küsten-Kajakfahren', it: 'Kayak sulla Costa', pt: 'Kayak pela Costa' },
   'experiences.kayak.desc': { es: 'Explora acantilados y cuevas marinas', gl: 'Explora acantilados e covas mariñas', en: 'Explore cliffs and sea caves', fr: 'Explorez les falaises et les govtes marines', de: 'Erkunden Sie Klippen und Meereshöhlen', it: 'Esplora scogliere e grotte marine', pt: 'Explore falésias e cavernas marinhas' },
+  'experiences.rentals.title': {
+    es: 'Alquiler de equipos para deportes acuáticos',
+    gl: 'Aluguer de equipos para deportes acuáticos',
+    en: 'Water sports equipment rental',
+    fr: 'Location d\'équipements de sports nautiques',
+    de: 'Verleih von Wassersportgeräten',
+    it: 'Noleggio attrezzatura per sport acquatici',
+    pt: 'Aluguel de equipamentos para esportes aquáticos'
+  },
+  'experiences.rentals.desc': {
+    es: 'Alquiler de material de Surf, Kitesurf, Paddle Surf y Kayak.',
+    gl: 'Aluguer de material de Surf, Kitesurf, Paddle Surf e Kaiak.',
+    en: 'Surf, Kitesurf, Paddle Surf and Kayak equipment rental.',
+    fr: 'Location de matériel de Surf, Kitesurf, Paddle Surf et Kayak.',
+    de: 'Verleih von Surf-, Kitesurf-, Paddle Surf- und Kayak-Ausrüstung.',
+    it: 'Noleggio attrezzatura da Surf, Kitesurf, Paddle Surf e Kayak.',
+    pt: 'Aluguel de equipamento de Surf, Kitesurf, Paddle Surf e Kayak.'
+  },
+  'experiences.rentals.duration': { es: '1h - Full day', gl: '1h - Día completo', en: '1h - Full day', fr: '1h - Journée complète', de: '1h - Ganztägig', it: '1h - Giorno intero', pt: '1h - Dia completo' },
   'experiences.sunset.title': { es: 'Atardeceres Mágicos', gl: 'Atardeceres Máxicos', en: 'Magical Sunsets', fr: 'Couchers de soleil Magiques', de: 'Magische Sonnenuntergänge', it: 'Tramonti Magici', pt: 'Pôr do sol Mágico' },
   'experiences.sunset.desc': { es: 'Observa las mejores puestas de sol de Galicia', gl: 'Observa as mellores postas de sol de Galicia', en: 'Watch the best sunsets in Galicia', fr: 'Observez les meilleurs couchers de soleil de Galice', de: 'Beobachten Sie die besten Sonnenuntergänge in Galizien', it: 'Guarda i migliori tramonti della Galizia', pt: 'Veja os mejores pores do sol da Galiza' },
   'experiences.sunset.duration': { es: '1h', gl: '1h', en: '1h', fr: '1h', de: '1h', it: '1h', pt: '1h' },
