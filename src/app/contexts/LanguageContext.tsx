@@ -119,7 +119,34 @@ const translations: Translations = {
   'booking.email': { es: 'Email', gl: 'Email', en: 'Email', fr: 'Email', de: 'E-Mail', it: 'Email', pt: 'E-mail' },
   'booking.phone': { es: 'Teléfono', gl: 'Teléfono', en: 'Phone', fr: 'Téléphone', de: 'Telefon', it: 'Telefono', pt: 'Telefone' },
   'booking.message': { es: 'Mensaje', gl: 'Mensaxe', en: 'Message', fr: 'Message', de: 'Nachricht', it: 'Messaggio', pt: 'Mensagem' },
-  'booking.submit': { es: 'Solicitar reserva', gl: 'Solicitar reserva', en: 'Request booking', fr: 'Demander une réservation', de: 'Buchung anfragen', it: 'Richiedi prenotazione', pt: 'Solicitar reserva' },
+  'booking.submit': { es: 'Enviar solicitud', gl: 'Enviar solicitude', en: 'Send request', fr: 'Envoyer la demande', de: 'Anfrage senden', it: 'Invia richiesta', pt: 'Enviar pedido' },
+  'booking.success': {
+    es: '¡Solicitud enviada! Te contactaremos pronto.',
+    gl: 'Solicitude enviada! Contactaremos contigo pronto.',
+    en: 'Request sent! We will contact you soon.',
+    fr: 'Demande envoyée ! Nous vous contacterons bientôt.',
+    de: 'Anfrage gesendet! Wir werden Sie bald kontaktieren.',
+    it: 'Richiesta inviata! Ti contatteremo presto.',
+    pt: 'Pedido enviado! Contactaremos em breve.'
+  },
+  'booking.placeholder.name': {
+    es: 'Tu nombre completo',
+    gl: 'O teu nome completo',
+    en: 'Your full name',
+    fr: 'Votre nom complet',
+    de: 'Ihr vollständiger Name',
+    it: 'Il tuo nome completo',
+    pt: 'Seu nome completo'
+  },
+  'booking.placeholder.message': {
+    es: 'Cuéntanos algo sobre tu viaje...',
+    gl: 'Cóntanos algo sobre a túa viaxe...',
+    en: 'Tell us something about your trip...',
+    fr: 'Dites-nous en plus sur votre voyage...',
+    de: 'Erzählen Sie uns etwas über Ihre Reise...',
+    it: 'Raccontaci qualcosa sul tuo viaggio...',
+    pt: 'Conte-nos algo sobre a sua viagem...'
+  },
   'booking.note': { es: 'Sin compromiso • Confirmación rápida', gl: 'Sen compromiso • Confirmación rápida', en: 'No commitment • Quick confirmation', fr: 'Sans engagement • Confirmation rapide', de: 'Ohne Verpflichtung • Schnelle Bestätigung', it: 'Senza impegno • Conferma rapida', pt: 'Sem compromisso • Confirmação rápida' },
 
   // Contact
@@ -249,16 +276,16 @@ Se recomienda llevar calzado adecuado, agua, protección solar y ropa cómoda. E
 Paisaje y puntos de interés
 Desde la cima se obtienen vistas panorámicas de la ría de Cee y Corcubión, el cabo Fisterra y la playa de Carnota, la más extensa de Galicia. El granito, modelado por la erosión, forma figuras singulares como O Xigante.
 
-Otros lugares destacados:
-• A Moa: el punto más alto y uno de los mejores miradores de la comarca.
-• Las murallas: restos de construcciones pétreas, posiblemente de los siglos IV-VI.
-• Castillo de San Xurxo: antigua torre defensiva del siglo X, hoy desaparecida, vinculada a la defensa frente a incursiones marítimas.
-• Chan de Lourenzo: pradera cercana a la cima con restos de una antigua mina de wolframio.
+Outros lugares destacados:
+• A Moa: o punto máis alto e un dos mellores miradoiros da comarca.
+• As murallas: restos de construcións pétreas, posiblemente dos séculos IV-VI.
+• Castelo de San Xurxo: antiga torre defensiva do século X, hoxe desaparecida, vinculada á defensa fronte a incursións marítimas.
+• Chan de Lourenzo: pradeira próxima á cima con restos dunha antiga mina de wolframio.
 
-Naturaleza
-El entorno destaca por su biodiversidad: se han catalogado 625 especies de flora, fauna y hongos. Entre ellas sobresale el roble enano (Quercus lusitanica), que tiene aquí su único hábitat en Galicia.
+Natureza
+O contorno destaca pola súa biodiversidade: foron catalogadas 625 especies de flora, fauna e fungos. Entre elas sobresae o carballo anano (Quercus lusitanica), que ten aquí o seu único habitar en Galicia.
 
-El Monte Pindo es, en definitiva, una visita imprescindible para quienes recorren A Costa da Morte: naturaleza singular, panorámicas espectaculares y un paisaje cargado de historia y leyenda.`,
+O Monte Pindo é, en definitiva, unha visita imprescindible para quen percorre a Costa da Morte: natureza singular, panorámicas espectaculares e unha paisaxe cargada de historia e lenda.`,
     gl: `O Monte Pindo, coñecido como o “Olimpo Celta”, é unha das paraxes máis emblemáticas da Costa da Morte, xunto á praia de Carnota e a fervenza do Ézaro. Este macizo granítico sitúase entre Dumbría, Carnota e Mazaricos (A Coruña) e forma parte da Rede Natura 2000 como Zona Especial de Conservación. Abarca tamén terreos de Cee e conta con 4.628,87 hectáreas, das que 438 son mariñas.
 
 Como chegar
@@ -311,7 +338,7 @@ Comment s'y rendre
 Le moyen le plus simple d'y accéder est de emprunter la route AC-550 (Cee-Carnota) jusqu'à la ville d'O Pindo, où commence l'itinéraire le plus populaire. Le point de départ se trouve à côté de l'église du village, où vous trouverez un panneau d'information et un parking.
 
 La montée vers A Moa
-L'itinéraire le plus célèbre mène à A Moa (627 m), le point culminant de la montagne. La difficulté est moyenne, avec des sections à forte pente depuis le niveau de la mer. La montée dure entre 2h et 2h30 (la descente environ 1h30). L'itinéraire est balisé par des balises blanches et vertes. A titre de référence, s'il y a du brouillard ou des doutes, il convient de garder la mer à gauche.
+L'itinéraire le plus célèbre mène à A Moa (627 m), le point culminant de la montagne. Il est de difficulté moyenne, avec des sections à forte pente depuis le niveau de la mer. La montée dure entre 2h et 2h30 (la descente environ 1h30). L'itinéraire est balisé par des balises blanches et vertes. A titre de référence, s'il y a du brouillard ou des doutes, il convient de garder la mer à gauche.
 
 Il est recommandé de porter des chaussures adaptées, d'apporter de l'eau, une protection solaire et des vêtements confortables. La première partie traverse une zone plus humide et plus végétalisée ; ensuite, les pentes ouvertes et les formations rocheuses prédominent.
 
@@ -377,12 +404,12 @@ Il Monte Pindo è, in definitiva, una visita imperdibile per chi percorre la Cos
     pt: `O Monte Pindo, conhecido como o “Olimpo Celta”, é um dos lugares mais emblemáticos da Costa da Morte, junto à praia de Carnota e à cascata do Ézaro. Este maciço granítico situa-se entre Dumbría, Carnota e Mazaricos (A Coruña) e faz parte da Rede Natura 2000 como Zona Especial de Conservação. Abrange também terrenos de Cee e conta com 4.628,87 hectares, dos quais 438 são marinhos.
 
 Como chegar
-A forma mais fácil de aceder é pola estrada AC-550 (Cee–Carnota) até á localidade do Pindo, onde começa a rota mais popular. O ponto de partida é junto à igreja da vila, onde existe um painel informativo e estacionamento.
+A forma mais fácil de aceder é pola estrada AC-550 (Cee–Carnota) ata á localidade do Pindo, onde começa a rota mais popular. O ponto de partida é junto à igreja da vila, onde existe um painel informativo e estacionamento.
 
 A subida à Moa
 A rota mais conhecida leva à Moa (627 m), o cume do monte. É de dificuldade média, com trechos de declive acentuado desde o nível do mar. A subida dura entre 2 e 2,5 horas (a descida, cerca de 1,5 horas). O percurso está sinalizado com balizas brancas e verdes. Como referência, se houver nevoeiro ou dúvidas, convém manter o mar à esquerda.
 
-Recomenda-se levar calzado adequado, água, proteção solar e roupa confortável. O primeiro trecho atraviesa uma zona mais húmida e com vegetación; depois predominam as encostas abertas e as formações rochosas.
+Recomenda-se levar calzado adecuado, água, proteção solar e roupa confortável. O primeiro trecho atraviesa unha zona más húmida e con vexetación; depois predominam as encostas abertas e as formações rochosas.
 
 Paisagem e pontos de interesse
 Do cume obtêm-se vistas panorámicas da ria de Cee e Corcubión, do cabo Fisterra e da praia de Carnota, a mais extensa da Galiza. O granito, moldado pela erosão, forma figuras singulares como O Xigante.
@@ -431,7 +458,7 @@ Puntos de interés
 • Praia de Area Maior: Una playa salvaje de arena blanca y aguas cristalinas que se extiende a los pies del monte, ideal para los amantes de la naturaleza en estado puro.
 
 Actividades recomendadas
-La subida al monte, aunque requiere calzado adecuado para terreno rocoso, compensa con creces por las vistas. También es muy recomendable el paseo circular que rodea la laguna y atraviesa el sistema dunar, permitiendo apreciar la biodiversidad de este enclave privilegiado.`,
+La subida al monte, aunque requiere calzado adecuado para terreno rocoso, compensa con creces por las vistas. También es muy recomendable el paseo circular que rodea la laguna y atraviesa el sistema dunar, permitiendo apreciar la biodiversidad de este enclave privilegia.`,
     gl: `O Monte Louro, coa súa icónica silueta de dous picos, érguese maxestoso na desembocadura da Ría de Muros e Noia. É un espazo natural protexido dunha beleza singular, onde o granito, a auga doce e a area do Atlántico conviven en perfecta harmonía.
 
 O contorno
@@ -464,7 +491,7 @@ L'environnement
 Points d'intérêt
 • Le sommet : Les deux pics granitiques offrent l'un des meilleurs panoramas des Rías Baixas et de l'entrée de l'estuaire de Muros et Noia.
 • Lagune de Xalfas : Un écosystème lagunaire protégé d'une grande valeur écologique qui invite à la contemplation et à l'observation des oiseaux.
-• Plage d'Area Maior : Une plage sauvage de sable blanc et d'eaux cristallines qui s'étende au pied de la montagne, idéale pour les amoureux de la nature à l'état pur.
+• Plage d'Area Maior : Une plage sauvage de sable blanc et d'eaux cristallines qui s'étend au pied de la montagne, idéale pour les amoureux de la nature à l'état pur.
 
 Activités recommandées
 La montée de la montagne, bien qu'elle nécessite des chaussures adaptées aux terrains rocheux, est largement récompensée par la vue. La promenade circulaire qui entoure la lagune et traverse le système dunaire est également vivement recommandée, permettant d'apprécier la biodiversité de cette enclave privilégiée.`,
@@ -535,7 +562,7 @@ Puntos de interese
 • O Miradoiro: Situado sobre a fervenza, ofrece unha vista aérea inigualable da desembocadura e da inmensidade do océano.
 • Pasarelas de madeira: Un cómodo percorrido a pé permite achegarse á base da fervenza con total seguridade, gozando da forza da auga desde preto.
 • Iluminación nocturna: Durante os meses de verán e en datas especiais, a fervenza ilumínase con xogos de luces de fores, convertendo o lugar nun escenario de película.
-• Museo da Electricidade: Xunto á fervenza atópase unha antiga central hidroeléctrica que hoxe alberga un centro de interpretación sobre a enerxía e a auga.
+• Museo da Electricidade: Xunto a fervenza atópase unha antiga central hidroeléctrica que hoxe alberga un centro de interpretación sobre a enerxía e a auga.
 
 Actividades recomendadas
 Unha das experiencias máis populares é alugar un kaiak para remontar a ensenada e ver a fervenza desde o mar, permitíndoche sentir os salpicos de auga doce mentres navegas polo Atlántico.`,
@@ -684,7 +711,7 @@ The moment of the "green flash," the range of purples and oranges that tint the 
 Lieux magiques
 Il n'existe pas un seul point pour profiter de ce spectacle, mais toute une géographie de lumière et de couleurs :
 • Cap Finisterre : Le lieu le plus emblématique. S'asseoir sur les rochers près du phare pendant que le disque solaire s'immerge dans l'Atlantique est un rite partagé par des milliers de voyageurs et de pèlerins.
-• Plage de Carnota : Avec ses 7 kilomètres de sable, le coucher du soleil est ici un déploiement de reflets dorés sur le rivage infini.
+• Plage de Carnota : Avec ses 7 kilomètres de sable, le coucher de soleil est ici un déploiement de reflets dorés sur le rivage infini.
 • Phare de Lira : Beaucoup plus calme et proche de Casa da Cuncheira, il offre un cadre intime avec le son des vagues s'écrasant contre le granit.
 
 Le rituel
@@ -747,14 +774,15 @@ O momento do "raio verde", a gama de púrpuras e laranjas que tingem o céu, e o
     it: 'Autentica taverna di mare famosa per il polpo e i frutti di mare freschi. Pura tradizione a soli 3 minuti da Casa da Cuncheira',
     pt: 'Autêntica taberna marítima famosa pelo seu polvo e marisco fresco. Tradição pura a 3 minutos da Casa da Cuncheira'
   },
+
   'gastronomy.ocuberto.desc': {
     es: 'Cocina tradicional gallega y tapas variadas en un ambiente acogedor. Especialistas en raciones generosas y productos de la zona.',
     gl: 'Cociña tradicional galega e tapas variadas nun ambiente acolledor. Especialistas en racións xenerosas e produtos da zona.',
     en: 'Traditional Galician cuisine and varied tapas in a cozy atmosphere. Specialists in generous portions and local products.',
     fr: 'Cuisine galicienne traditionnelle et tapas variées dans une ambiance chaleureuse. Spécialistes des portions généreuses et des produits locaux.',
     de: 'Traditionelle galicische Küche und vielfältige Tapas in gemütlicher Atmosphäre. Spezialisten für großzügige Portionen und lokale Produkte.',
-    it: 'Cucina galiziana tradizionale e tapas varie in un\'atmosfera accogliente. Specialisti in porzioni generose e prodotti locales.',
-    pt: 'Cozinha galega tradicional e tapas variadas num ambiente acolhedor. Especialistas em porções generosas e produtos locales.'
+    it: 'Cucina galiziana tradizionale e tapas varie in un\'atmosfera accogliente. Specialisti in porzioni generose e prodotti locali.',
+    pt: 'Cozinha galega tradicional e tapas variadas num ambiente acolhedor. Especialistas em porções generosas e produtos locais.'
   },
   'gastronomy.moncho.desc': {
     es: 'Hamburguesas artesanales con ingredientes frescos y de calidad. El mejor sabor de Lira en cada bocado.',
@@ -872,7 +900,7 @@ O pôr do sol do alto das arribas, com a imensidão do oceano a abrir-se diante 
     en: 'Real-time radar and weather forecast to plan your stay.',
     fr: 'Radar en temps réel et prévisions météorologiques pour planifier votre séjour.',
     de: 'Echtzeit-Radar und Wettervorhersage zur Planung Ihres Aufenthalts.',
-    it: 'Radar in tempo reale e previsioni del tempo para pianificare il tuo soggiorno.',
+    it: 'Radar in tempo reale e previsioni del tempo per pianificare il tuo soggiorno.',
     pt: 'Radar em tempo real e previsão meteorológica para planejar a sua estadia.'
   },
   'faq.title': {
